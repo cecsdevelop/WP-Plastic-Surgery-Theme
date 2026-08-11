@@ -1,0 +1,14 @@
+.faq-repeater__row {
+	border: 1px solid #dcdcde;
+	background: #fff;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+.faq-repeater__remove {
+	color: #b32d2e;
+}
+
+#faq-repeater-template {
+	display: none;
+}

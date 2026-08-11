@@ -1,0 +1,19 @@
+.simple-text-repeater__row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.simple-text-repeater__row input {
+	flex: 1;
+}
+
+.simple-text-repeater__remove {
+	color: #b32d2e;
+	white-space: nowrap;
+}
+
+.simple-text-repeater__template {
+	display: none;
+}

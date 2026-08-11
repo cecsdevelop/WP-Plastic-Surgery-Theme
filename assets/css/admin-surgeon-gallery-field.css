@@ -1,0 +1,25 @@
+.surgeon-gallery-field__grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.surgeon-gallery-field__item {
+	width: 100px;
+}
+
+.surgeon-gallery-field__item img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	display: block;
+	border: 1px solid #dcdcde;
+}
+
+.surgeon-gallery-field__remove {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 11px;
+}

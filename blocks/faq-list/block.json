@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "truong-group/faq-list",
+	"title": "FAQ List",
+	"category": "truong-group",
+	"icon": "editor-help",
+	"description": "Pick a published FAQ set (question/answer group) to render on this page.",
+	"textdomain": "truong-group",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"faqId": {
+			"type": "number",
+			"default": 0
+		}
+	}
+}

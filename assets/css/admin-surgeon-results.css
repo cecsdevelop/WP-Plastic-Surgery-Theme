@@ -1,0 +1,8 @@
+.surgeon-results-terms {
+	margin: 0;
+	list-style: none;
+}
+
+.surgeon-results-terms li {
+	margin-bottom: 6px;
+}

@@ -1,0 +1,28 @@
+.surgeon-reviews-field__row {
+	position: relative;
+	border: 1px solid #dcdcde;
+	background: #fff;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+.surgeon-reviews-field__grid {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.surgeon-reviews-field__grid p {
+	flex: 1;
+	min-width: 160px;
+}
+
+.surgeon-reviews-field__remove {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.surgeon-reviews-field__template {
+	display: none;
+}

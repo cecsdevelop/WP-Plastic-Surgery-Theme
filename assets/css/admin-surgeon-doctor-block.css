@@ -1,0 +1,52 @@
+.surgeon-doctor-block {
+	border: 1px solid #dcdcde;
+	background: #fff;
+	padding: 12px;
+	max-width: 720px;
+}
+
+.surgeon-doctor-block__tags {
+	margin-top: 8px;
+}
+
+.surgeon-doctor-block__ctas {
+	display: flex;
+	gap: 16px;
+	margin-top: 8px;
+}
+
+.surgeon-doctor-block__cta {
+	flex: 1;
+	min-width: 0;
+}
+
+.surgeon-doctor-block__columns {
+	display: flex;
+	gap: 16px;
+	margin-top: 8px;
+}
+
+.surgeon-doctor-block__col {
+	flex: 1;
+	min-width: 0;
+}
+
+.surgeon-image-field__preview {
+	display: flex;
+	align-items: center;
+	min-height: 60px;
+	max-width: 200px;
+	margin-bottom: 8px;
+}
+
+.surgeon-image-field__preview img {
+	max-width: 200px;
+	max-height: 120px;
+	height: auto;
+	display: block;
+}
+
+.surgeon-image-field__placeholder {
+	color: #646970;
+	font-style: italic;
+}

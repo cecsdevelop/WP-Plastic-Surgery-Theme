@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "truong-group/procedure-hero",
+	"title": "Procedure Hero",
+	"category": "truong-group",
+	"icon": "cover-image",
+	"description": "Hero section for procedure pages: featured image and title come from the page, subtitle/excerpt/CTAs are edited here.",
+	"textdomain": "truong-group",
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"attributes": {
+		"subtitle": {
+			"type": "string",
+			"default": ""
+		},
+		"excerpt": {
+			"type": "string",
+			"default": ""
+		},
+		"desktopImageId": {
+			"type": "number",
+			"default": 0
+		},
+		"desktopImageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"mobileImageId": {
+			"type": "number",
+			"default": 0
+		},
+		"mobileImageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"cta1Text": {
+			"type": "string",
+			"default": ""
+		},
+		"cta1Url": {
+			"type": "string",
+			"default": ""
+		},
+		"cta1BgColor": {
+			"type": "string",
+			"default": ""
+		},
+		"cta1TextColor": {
+			"type": "string",
+			"default": ""
+		},
+		"cta2Text": {
+			"type": "string",
+			"default": ""
+		},
+		"cta2Url": {
+			"type": "string",
+			"default": ""
+		},
+		"cta2BgColor": {
+			"type": "string",
+			"default": ""
+		},
+		"cta2TextColor": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}
