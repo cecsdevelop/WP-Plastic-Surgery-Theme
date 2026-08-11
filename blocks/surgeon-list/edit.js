@@ -11,7 +11,7 @@
 	var useSelect = data.useSelect;
 	var __ = i18n.__;
 
-	blocks.registerBlockType( 'truong-group/surgeon-list', {
+	blocks.registerBlockType( 'wp-plastic-surgery/surgeon-list', {
 		edit: function( props ) {
 			var attributes = props.attributes;
 			var setAttributes = props.setAttributes;
@@ -43,20 +43,20 @@
 					{},
 					el(
 						PanelBody,
-						{ title: __( 'Layout', 'truong-group' ), initialOpen: true },
+						{ title: __( 'Layout', 'wp-plastic-surgery' ), initialOpen: true },
 						el( RadioControl, {
-							label: __( 'Display as', 'truong-group' ),
+							label: __( 'Display as', 'wp-plastic-surgery' ),
 							selected: attributes.layout,
 							options: [
-								{ label: __( 'List', 'truong-group' ), value: 'list' },
-								{ label: __( 'Card Grid', 'truong-group' ), value: 'card' }
+								{ label: __( 'List', 'wp-plastic-surgery' ), value: 'list' },
+								{ label: __( 'Card Grid', 'wp-plastic-surgery' ), value: 'card' }
 							],
 							onChange: function( value ) {
 								setAttributes( { layout: value } );
 							}
 						} ),
 						'card' === attributes.layout ? el( SelectControl, {
-							label: __( 'Columns', 'truong-group' ),
+							label: __( 'Columns', 'wp-plastic-surgery' ),
 							value: String( attributes.columns ),
 							options: [
 								{ label: '2', value: '2' },
@@ -70,15 +70,15 @@
 					),
 					el(
 						PanelBody,
-						{ title: __( 'Exclude Surgeons', 'truong-group' ), initialOpen: false },
+						{ title: __( 'Exclude Surgeons', 'wp-plastic-surgery' ), initialOpen: false },
 						el( 'p', { className: 'truong-surgeon-list-editor__notice' },
-							__( 'Check a surgeon to leave them out of this list.', 'truong-group' )
+							__( 'Check a surgeon to leave them out of this list.', 'wp-plastic-surgery' )
 						),
 						undefined === surgeons ? el( Spinner ) : null,
 						surgeons ? surgeons.map( function( post ) {
 							return el( CheckboxControl, {
 								key: post.id,
-								label: post.title && post.title.rendered ? post.title.rendered : __( '(no title)', 'truong-group' ),
+								label: post.title && post.title.rendered ? post.title.rendered : __( '(no title)', 'wp-plastic-surgery' ),
 								checked: excludedIds.indexOf( post.id ) !== -1,
 								onChange: function( checked ) {
 									setExcluded( post.id, checked );
@@ -91,7 +91,7 @@
 					'div',
 					blockProps,
 					el( ServerSideRender, {
-						block: 'truong-group/surgeon-list',
+						block: 'wp-plastic-surgery/surgeon-list',
 						attributes: attributes
 					} )
 				)

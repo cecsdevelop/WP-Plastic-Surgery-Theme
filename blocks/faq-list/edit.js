@@ -6,7 +6,7 @@
 	var useSelect = data.useSelect;
 	var __ = i18n.__;
 
-	blocks.registerBlockType( 'truong-group/faq-list', {
+	blocks.registerBlockType( 'wp-plastic-surgery/faq-list', {
 		edit: function( props ) {
 			var attributes = props.attributes;
 			var setAttributes = props.setAttributes;
@@ -21,12 +21,12 @@
 				} );
 			}, [] );
 
-			var options = [ { label: __( '— Select a FAQ set —', 'truong-group' ), value: 0 } ];
+			var options = [ { label: __( '— Select a FAQ set —', 'wp-plastic-surgery' ), value: 0 } ];
 
 			if ( faqPosts ) {
 				faqPosts.forEach( function( post ) {
 					options.push( {
-						label: post.title && post.title.rendered ? post.title.rendered : __( '(no title)', 'truong-group' ),
+						label: post.title && post.title.rendered ? post.title.rendered : __( '(no title)', 'wp-plastic-surgery' ),
 						value: post.id
 					} );
 				} );
@@ -36,7 +36,7 @@
 				'div',
 				blockProps,
 				el( SelectControl, {
-					label: __( 'FAQ set', 'truong-group' ),
+					label: __( 'FAQ set', 'wp-plastic-surgery' ),
 					value: attributes.faqId,
 					options: options,
 					onChange: function( value ) {
@@ -45,12 +45,12 @@
 				} ),
 				undefined === faqPosts ? el( Spinner ) : null,
 				attributes.faqId ? el( ServerSideRender, {
-					block: 'truong-group/faq-list',
+					block: 'wp-plastic-surgery/faq-list',
 					attributes: { faqId: attributes.faqId }
 				} ) : el(
 					'p',
 					{ className: 'truong-faq-list-editor__notice' },
-					__( 'Choose a FAQ set above to preview it here.', 'truong-group' )
+					__( 'Choose a FAQ set above to preview it here.', 'wp-plastic-surgery' )
 				)
 			);
 		},

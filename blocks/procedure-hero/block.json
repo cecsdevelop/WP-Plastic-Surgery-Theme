@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "truong-group/procedure-hero",
+	"name": "wp-plastic-surgery/procedure-hero",
 	"title": "Procedure Hero",
-	"category": "truong-group",
+	"category": "wp-plastic-surgery",
 	"icon": "cover-image",
 	"description": "Hero section for procedure pages: featured image and title come from the page, subtitle/excerpt/CTAs are edited here.",
-	"textdomain": "truong-group",
+	"textdomain": "wp-plastic-surgery",
 	"supports": {
 		"html": false,
 		"multiple": false

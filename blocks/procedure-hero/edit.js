@@ -38,7 +38,7 @@
 						return el(
 							Button,
 							{ variant: 'secondary', onClick: obj.open },
-							imageId ? __( 'Replace image', 'truong-group' ) : __( 'Select image', 'truong-group' )
+							imageId ? __( 'Replace image', 'wp-plastic-surgery' ) : __( 'Select image', 'wp-plastic-surgery' )
 						);
 					}
 				} )
@@ -46,7 +46,7 @@
 			imageId ? el(
 				Button,
 				{ variant: 'link', isDestructive: true, onClick: onRemove },
-				__( 'Remove', 'truong-group' )
+				__( 'Remove', 'wp-plastic-surgery' )
 			) : null
 		);
 	}
@@ -67,36 +67,36 @@
 			{ className: 'truong-procedure-hero-editor__cta' },
 			el( 'p', { className: 'truong-procedure-hero-editor__cta-label' }, label ),
 			el( TextControl, {
-				label: __( 'Button text', 'truong-group' ),
+				label: __( 'Button text', 'wp-plastic-surgery' ),
 				value: textValue,
 				onChange: onChangeText
 			} ),
 			el( TextControl, {
-				label: __( 'Button URL', 'truong-group' ),
+				label: __( 'Button URL', 'wp-plastic-surgery' ),
 				type: 'url',
 				value: urlValue,
 				onChange: onChangeUrl
 			} ),
 			el( PanelColorSettings, {
-				title: __( 'Button colors', 'truong-group' ),
+				title: __( 'Button colors', 'wp-plastic-surgery' ),
 				initialOpen: false,
 				colorSettings: [
 					{
 						value: bgColor,
 						onChange: onChangeBgColor,
-						label: __( 'Background color', 'truong-group' )
+						label: __( 'Background color', 'wp-plastic-surgery' )
 					},
 					{
 						value: textColor,
 						onChange: onChangeTextColor,
-						label: __( 'Text color', 'truong-group' )
+						label: __( 'Text color', 'wp-plastic-surgery' )
 					}
 				]
 			} )
 		);
 	}
 
-	blocks.registerBlockType( 'truong-group/procedure-hero', {
+	blocks.registerBlockType( 'wp-plastic-surgery/procedure-hero', {
 		edit: function( props ) {
 			var attributes = props.attributes;
 			var setAttributes = props.setAttributes;
@@ -110,12 +110,12 @@
 					{},
 					el(
 						PanelBody,
-						{ title: __( 'Hero Images', 'truong-group' ), initialOpen: true },
+						{ title: __( 'Hero Images', 'wp-plastic-surgery' ), initialOpen: true },
 						el( 'p', { className: 'truong-procedure-hero-editor__notice' },
-							__( 'Optional: override the featured image for performance. If no mobile image is set, the desktop image is used on mobile too.', 'truong-group' )
+							__( 'Optional: override the featured image for performance. If no mobile image is set, the desktop image is used on mobile too.', 'wp-plastic-surgery' )
 						),
 						imagePicker( {
-							label: __( 'Desktop image', 'truong-group' ),
+							label: __( 'Desktop image', 'wp-plastic-surgery' ),
 							imageId: attributes.desktopImageId,
 							imageUrl: attributes.desktopImageUrl,
 							onSelect: function( media ) {
@@ -126,7 +126,7 @@
 							}
 						} ),
 						imagePicker( {
-							label: __( 'Mobile image (optional)', 'truong-group' ),
+							label: __( 'Mobile image (optional)', 'wp-plastic-surgery' ),
 							imageId: attributes.mobileImageId,
 							imageUrl: attributes.mobileImageUrl,
 							onSelect: function( media ) {
@@ -139,12 +139,12 @@
 					),
 					el(
 						PanelBody,
-						{ title: __( 'Call to Action Buttons', 'truong-group' ), initialOpen: false },
+						{ title: __( 'Call to Action Buttons', 'wp-plastic-surgery' ), initialOpen: false },
 						el( 'p', { className: 'truong-procedure-hero-editor__notice' },
-							__( 'Optional, up to 2 buttons. A button only shows once it has both text and a URL. Hover defaults to 80% opacity.', 'truong-group' )
+							__( 'Optional, up to 2 buttons. A button only shows once it has both text and a URL. Hover defaults to 80% opacity.', 'wp-plastic-surgery' )
 						),
 						ctaControls( {
-							label: __( 'CTA 1', 'truong-group' ),
+							label: __( 'CTA 1', 'wp-plastic-surgery' ),
 							textValue: attributes.cta1Text,
 							urlValue: attributes.cta1Url,
 							bgColor: attributes.cta1BgColor,
@@ -163,7 +163,7 @@
 							}
 						} ),
 						ctaControls( {
-							label: __( 'CTA 2', 'truong-group' ),
+							label: __( 'CTA 2', 'wp-plastic-surgery' ),
 							textValue: attributes.cta2Text,
 							urlValue: attributes.cta2Url,
 							bgColor: attributes.cta2BgColor,
@@ -189,12 +189,12 @@
 					el(
 						'p',
 						{ className: 'truong-procedure-hero-editor__notice' },
-						__( 'By default the page title and featured image are used. Fill in the subtitle and excerpt below; set custom hero images in the sidebar if needed.', 'truong-group' )
+						__( 'By default the page title and featured image are used. Fill in the subtitle and excerpt below; set custom hero images in the sidebar if needed.', 'wp-plastic-surgery' )
 					),
 					el( 'input', {
 						type: 'text',
 						className: 'truong-procedure-hero-editor__subtitle',
-						placeholder: __( 'Subtitle', 'truong-group' ),
+						placeholder: __( 'Subtitle', 'wp-plastic-surgery' ),
 						value: attributes.subtitle,
 						onChange: function( event ) {
 							setAttributes( { subtitle: event.target.value } );
@@ -203,7 +203,7 @@
 					el( RichText, {
 						tagName: 'div',
 						className: 'truong-procedure-hero-editor__excerpt',
-						placeholder: __( 'Excerpt…', 'truong-group' ),
+						placeholder: __( 'Excerpt…', 'wp-plastic-surgery' ),
 						value: attributes.excerpt,
 						onChange: function( value ) {
 							setAttributes( { excerpt: value } );

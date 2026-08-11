@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "truong-group/faq-list",
+	"name": "wp-plastic-surgery/faq-list",
 	"title": "FAQ List",
-	"category": "truong-group",
+	"category": "wp-plastic-surgery",
 	"icon": "editor-help",
 	"description": "Pick a published FAQ set (question/answer group) to render on this page.",
-	"textdomain": "truong-group",
+	"textdomain": "wp-plastic-surgery",
 	"supports": {
 		"html": false
 	},

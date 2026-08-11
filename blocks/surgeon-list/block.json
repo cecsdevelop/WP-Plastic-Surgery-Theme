@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "truong-group/surgeon-list",
+	"name": "wp-plastic-surgery/surgeon-list",
 	"title": "Surgeon List",
-	"category": "truong-group",
+	"category": "wp-plastic-surgery",
 	"icon": "groups",
 	"description": "Lists Surgeon posts as a list or a 2/3/4-column card grid, with the option to exclude specific surgeons.",
-	"textdomain": "truong-group",
+	"textdomain": "wp-plastic-surgery",
 	"supports": {
 		"html": false
 	},

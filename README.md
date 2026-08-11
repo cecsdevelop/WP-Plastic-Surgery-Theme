@@ -62,11 +62,11 @@ assets/
 
 ## Bloques Gutenberg
 
-Namespace de bloques: `truong-group`.
+Namespace de bloques: `wp-plastic-surgery`.
 
-- **`truong-group/procedure-hero`** — Hero de páginas de procedimiento: imagen y título vienen de la página; subtítulo, extracto y dos CTAs se editan en el bloque (imágenes desktop/mobile independientes).
-- **`truong-group/surgeon-list`** — Lista cirujanos como lista o grid de 2/3/4 columnas, con opción de excluir cirujanos concretos.
-- **`truong-group/faq-list`** — Inserta un set de FAQs (pregunta/respuesta) publicado previamente.
+- **`wp-plastic-surgery/procedure-hero`** — Hero de páginas de procedimiento: imagen y título vienen de la página; subtítulo, extracto y dos CTAs se editan en el bloque (imágenes desktop/mobile independientes).
+- **`wp-plastic-surgery/surgeon-list`** — Lista cirujanos como lista o grid de 2/3/4 columnas, con opción de excluir cirujanos concretos.
+- **`wp-plastic-surgery/faq-list`** — Inserta un set de FAQs (pregunta/respuesta) publicado previamente.
 
 ## Convenciones de código
 
